@@ -1,0 +1,53 @@
+.container {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.item {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.desc {
+  margin-top: 8px;
+}
+
+.type {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+/* 新增一个封面容器，固定宽高比，如 3:4 比例 */
+.poster {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  /* 固定 3:4 比例，也可以用 2 / 3 或 2 / 3.5 */
+  overflow: hidden;
+  background-color: #f0f0f0;
+  /* 没加载完之前也不会跳 */
+  border-radius: 4px;
+}
